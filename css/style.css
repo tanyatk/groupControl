@@ -1,0 +1,340 @@
+@import "/fonts/imago/stylesheet.css";
+/* ==========================================================================
+   RESET
+   ========================================================================== */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display: block;
+}
+nav ul, 
+ul li {
+    list-style: none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    
+}
+img {
+    display: inline-block; 
+    max-width: 100%;
+}
+a img {
+    border: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+input, select {
+    vertical-align:middle;
+}
+
+html {
+-webkit-text-size-adjust: none;
+}
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+   
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Imago-Medium', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* ==========================================================================
+   CROSSSITES CLASS
+   ========================================================================== */
+
+.g-clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.g-clearfix {
+    display: inline-block;
+}
+
+* html .g-clearfix {
+    height: 1%;
+}
+
+.g-clearfix {
+    display: block;
+}
+
+/* ==========================================================================
+   COLUMN
+   ========================================================================== */
+   
+.col-240-fix {
+    
+}
+
+.col-ml-240 {
+    
+}
+
+/* ==========================================================================
+   STYLES FOR TEXT
+   ========================================================================== */
+
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+
+.b-search {}
+
+.b-search__title {
+    color: #333;
+    display: inline-block;
+    padding-right: 16px;
+    vertical-align: top;
+}
+
+.b-search__wrap {
+    background: #fff;
+    border: 1px solid #d5cfcf;
+    border-left: 1px solid #fd9913;
+    border-radius: 12px;
+    display: inline-block;
+    height: 38px;
+    padding: 0 6px 0 10px;
+    position: relative;
+}
+
+.b-search__wrap:before {
+    background: #fd9913;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    content: '';
+    height: 38px;
+    display: inline-block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 6px;
+}
+
+.b-search__wrap__inp {
+    border: none;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: block;
+    height: 36px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.b-search__wrap__inp:focus {
+    outline: none;
+}
+
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+   
+.b-btn {
+    background-color: #fff;
+    outline: 1px solid #d5cfcf;
+    outline-offset: -1px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font: 800 16px/38px 'Imago-Medium', sans-serif;
+    height: 38px;
+    padding: 0 22px;
+    position: relative;
+    text-align: center;
+    transition: background-color .1s linear;
+}   
+
+.b-btn:before {
+    background: #fd9a13;
+    border-bottom: 1px solid #fed7a1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    content: '';
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: -4px;
+    width: 100%;
+}
+
+.b-btn:after {
+    background: #fd9a13;
+    border-top: 1px solid #fed7a1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    bottom: -4px;
+    content: '';
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.b-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* ==========================================================================
+   MESSAGE
+   ========================================================================== */
+
+.b-message {
+    color: #a9a9a9;
+    font: 600 16px/22px 'Imago-Medium', sans-serif;
+    transition: opacity .2s linear;
+      -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+      -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+
+/* ==========================================================================
+   MODULES
+   ========================================================================== */
+
+  
+   
+/* WRAP */
+   
+.l-wrap {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGZJREFUeNrEkjEOwDAIA52oO///JbyADiyREigSRPVopFwMHswMgIhwkogE04mChqp+Mne+Od1kL6f5JpuWyI/39q41f9+2vX3G96+R/25YJuHNhmX4dxqW4a9+BzlumPeXEvkVYAA55FOM46NLlwAAAABJRU5ErkJggg==) repeat;
+    min-height: 100%;
+    position: relative;
+}
+
+/* LOGO */
+
+
+.b-logo {
+    background: rgb(253,157,19);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZkOWQxMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2ZkOGYxMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZDgxMTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  rgba(253,157,19,1) 0%, rgba(253,143,19,1) 51%, rgba(253,129,19,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(253,157,19,1)), color-stop(51%,rgba(253,143,19,1)), color-stop(100%,rgba(253,129,19,1)));
+    background: -webkit-linear-gradient(top,  rgba(253,157,19,1) 0%,rgba(253,143,19,1) 51%,rgba(253,129,19,1) 100%);
+    background: -o-linear-gradient(top,  rgba(253,157,19,1) 0%,rgba(253,143,19,1) 51%,rgba(253,129,19,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(253,157,19,1) 0%,rgba(253,143,19,1) 51%,rgba(253,129,19,1) 100%);
+    background: linear-gradient(to bottom,  rgba(253,157,19,1) 0%,rgba(253,143,19,1) 51%,rgba(253,129,19,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd9d13', endColorstr='#fd8113',GradientType=0 );
+    display: block;
+    text-align: center;
+}
+
+.b-logo__img {
+    display: block;
+    height: 45px;
+    left: 50%;
+    margin: -22px 0 0 -87px;
+    position: absolute;
+    top: 50%;
+    width: 172px;
+}
+
+/* CONTENT */
+
+.b-content {
+    padding-top: 26px;
+}
+
+.b-tabs {
+    padding-top: 34px;
+}
+
+.b-bl-with-img__link {
+    background: #feffff;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 9px;
+    padding: 4px;
+}
+
+.b-bl-with-img__link__photo {
+    vertical-align: top;
+}
+
+.b-bl-with-img__title {
+    color: #333;
+    display: block;
+    text-transform: uppercase;
+}
+
+.b-bl-with-img__descr,
+.b-bl-with-img__group {
+    color: #333;
+    display: block;
+}
